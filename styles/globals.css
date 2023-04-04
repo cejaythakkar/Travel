@@ -29,13 +29,14 @@
   }
   body {
     @apply bg-[#61777F] text-[#000000] tracking-wide h-full w-full;
+    overflow: hidden;
   }
   li {
     @apply cursor-pointer;
   }
-  button {
+  /* button {
     @apply shadow-xl rounded-xl shadow-gray-400 bg-gradient-to-r from-[#D2D6DC] to-[#61777F] text-white;
-  }
+  } */
 }
 
 html,
