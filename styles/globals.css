@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/assets/fonts/Roboto-Black.ttf') format('TrueType');
+  font-weight: bolder;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/assets/fonts/Roboto-Bold.ttf') format('TrueType');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/assets/fonts/Roboto-Regular.ttf') format('TrueType');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/assets/fonts/Roboto-Light.ttf') format('TrueType');
+  font-weight: lighter;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  #__next {
+    @apply h-full w-full;
+  }
+  body {
+    @apply bg-[#61777F] text-[#000000] tracking-wide h-full w-full;
+  }
+  li {
+    @apply cursor-pointer;
+  }
+  button {
+    @apply shadow-xl rounded-xl shadow-gray-400 bg-gradient-to-r from-[#D2D6DC] to-[#61777F] text-white;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.show-case-text {
+  height: calc(100% - 200px);
+}
