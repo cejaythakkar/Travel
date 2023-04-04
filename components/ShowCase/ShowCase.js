@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar';
 import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa';
+import video from '../../public/assets/videos/petal_20230315_145204.mp4'
 
 const ShowCase = () => {
   return (
@@ -15,7 +16,7 @@ const ShowCase = () => {
           className="absolute top-0 left-0 w-full h-full object-cover "
         >
           <source
-            src="/assets/videos/petal_20230315_145204.mp4"
+            src={'_next/static/media/videos/petal_20230315_145204.mp4'}
             type="video/mp4"
           />
         </video>

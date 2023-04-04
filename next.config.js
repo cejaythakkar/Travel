@@ -2,6 +2,25 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  webpack: (config, options) => {
+    config.module.rules.push(
+      {
+        test: /\.mp4$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'static/media/videos',
 
-module.exports = nextConfig
+            },
+          },
+        ],
+      }
+    );
+
+    return config;
+  },
+};
+
+module.exports = nextConfig;
