@@ -9,7 +9,7 @@ const Login = ({ showLogin, loginClickHandler }) => {
   return (
     <div
       className={`h-screen absolute flex top-0 z-[1000] w-[30%] transition-all ${
-        showLogin ? 'right-0 opacity-100' : '-right-[50%] opacity-0'
+        showLogin ? 'right-0' : '-right-[50%]'
       } duration-700 ease`}
     >
       <div className="flex h-full w-full backdrop-blur-[15px] flex-col justify-center items-center relative">
