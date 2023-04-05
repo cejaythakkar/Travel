@@ -12,7 +12,6 @@ const nextConfig = {
             options: {
               name: '[name].[ext]',
               outputPath: 'static/media/videos',
-
             },
           },
         ],
