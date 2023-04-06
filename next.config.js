@@ -46,8 +46,6 @@ module.exports = module.exports = (phase, { defaultConfig }) => {
 
   return {
     /* development only config options here */
-    basePath: '/Travel',
-    assetPrefix: 'Travel/',
     ...nextConfig,
   };
 };
