@@ -15,6 +15,7 @@ const ShowCase = () => {
           type="video/mp4"
         />
       </video>
+      <img src="/assets/images/logo-no-background.png" className="w-[100px] h-[100px] bg-accent-300 z-[888]"/>
       <div className="relative z-[100] p-2.5 w-full flex flex-col justify-center flex-auto lg:max-w-[75%]">
         <h2 className="text-white font-roboto font-semibold text-xl sm:text-2xl md:text-3xl text-center lg:text-left">
           Hello there, I&apos;m
