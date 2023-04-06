@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -38,4 +39,15 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = module.exports = (phase, { defaultConfig }) => {
+  if (phase === PHASE_DEVELOPMENT_SERVER) {
+    return nextConfig;
+  }
+
+  return {
+    /* development only config options here */
+    basePath: '/Travel',
+    assetPrefix: 'Travel',
+    ...nextConfig,
+  };
+};
