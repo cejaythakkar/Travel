@@ -39,7 +39,7 @@ const nextConfig = {
   },
 };
 
-module.exports = module.exports = (phase, { defaultConfig }) => {
+module.exports = (phase, { defaultConfig }) => {
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     return nextConfig;
   }
