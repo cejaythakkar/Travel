@@ -1,7 +1,5 @@
 import React from 'react';
 
-import video from '../../public/assets/videos/petal_20230315_145204.mp4';
-
 const ShowCase = () => {
   return (
     <>
@@ -13,7 +11,7 @@ const ShowCase = () => {
         className="absolute top-0 left-0 w-full h-full object-cover "
       >
         <source
-          src={'_next/static/media/videos/petal_20230315_145204.mp4'}
+          src={'/assets/videos/petal_20230315_145204.mp4'}
           type="video/mp4"
         />
       </video>
